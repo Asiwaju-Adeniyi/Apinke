@@ -1,0 +1,36 @@
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Editor settings
+.vscode/
+.idea/
+*.code-workspace
+
+# Build artifacts
+*.o
+*.obj
+*.out
+*.exe
+*.a
+*.so
+*.dll
+*.dylib
+
+# Debug symbols and metadata
+*.dSYM/
+*.pdb
+
+# CMake and build directories
+build/
+cmake-build-*/
+
+# Temporary files
+*.log
+*.tmp
+*.swp
+*.swo
+
+# Backup files
+*~
+*.bak
