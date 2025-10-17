@@ -11,10 +11,10 @@ class string {
 
     public: 
 
-  string (const std::string& s) : len{s.len} {
+  string (const std::string& s) : len{s.size()} {
         if (len > 0) {
             data = new char[len + 1];
-            memcpy(data, s.data, len+1);
+            memcpy(data, s.data(), len+1);
         };
     }
 };
