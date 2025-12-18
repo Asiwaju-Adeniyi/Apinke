@@ -17,15 +17,16 @@ int getNumAccidents() {
 }
 
 void findLowest(int N, int S, int E, int W, int C) {
-    int highest = N;
+    int lowest = N;
     std::string name = "North";
 
-    if (S > N) { highest = S; name = "South";}
-    if (E > N) {highest = N; name = "North";}
-    if (W > N) {highest = W; name = "West";}
-    if (C > N) {highest = C; name = "Central";}
+    if (S < lowest) { lowest = S; name = "South";}
+    if (E < lowest) { lowest = E; name = "East";}
+    if (W < lowest) { lowest = W; name = "West";}
+    if (C < lowest) { lowest = C; name = "Central";}
 
-    std::cout << "The area with the highest number of automobile accidents is " << name << ", with " << highest << " accidenets." << std::endl;
+       std::cout << "The safest region is " << name
+              << " with " << lowest << " accidents.\n";
 
 }
 
