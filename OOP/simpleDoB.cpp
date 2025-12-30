@@ -1,22 +1,9 @@
 #include <iostream>
 #include <iomanip>
 #include <memory>
+#include "Date.h"
 
-class Date{
-    private: 
-    int day;
-    int month;
-    int year;
 
-    public: 
-
-    void setDay(int d);
-    void setMonth(int m);
-    void setYear(int y);
-    int getDay() const;
-    int getMonth() const;
-    int getYear() const;
-};
 
 void Date::setDay(int d){
     day = d;

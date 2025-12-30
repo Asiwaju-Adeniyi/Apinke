@@ -1,19 +1,9 @@
 #include <iostream>
 #include <iomanip>
 #include <memory>
+#include "Rectangle.h"
 
-class Rectangle{
-    private: 
-    double width;
-    double length;
-    
-    public: 
-    void setWidth(double);
-    void setLength(double);
-    double getWidth() const;
-    double getLength() const;
-    double getArea() const;
-};
+
 
 void Rectangle::setWidth(double w) {
     width = w;
