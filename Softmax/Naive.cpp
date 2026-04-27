@@ -6,7 +6,7 @@ std::vector<double> softmax (const std::vector<double>& x) {
     int V = x.size();
     std::vector<double> y(V);
     double d = 0.0f;
-
+    
     for (int j = 0; j < V; j++) {
         d += std::exp(x[j]);
     }
